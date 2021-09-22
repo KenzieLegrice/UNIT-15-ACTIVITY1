@@ -2,7 +2,7 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
-/*Importing the custom font from Google Fonts*/
+/*Importing custom font from Google Fonts*/
 .nav-bar, a {
     display: flex;
     justify-content: center;
@@ -12,6 +12,12 @@
     text-decoration: none;
     color: rgb(82, 81, 81);
     font-weight: bold;
+}
+/*Makes the Nav Bar 'stick' to the top whilst scrolling down*/
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 /*Styles the A tag into looking like a button*/
 a{
@@ -148,7 +154,6 @@ a:hover {
         opacity: 1;
     }
 }
-/*Animation which controls the header, changes the background position which changes the color in the gradient*/
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
