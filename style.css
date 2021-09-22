@@ -2,6 +2,7 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+
 .nav-bar, a {
     display: flex;
     justify-content: center;
@@ -27,9 +28,10 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: grey;
+    background-color: rgb(160, 120, 120);
     color: white;
     padding: 40px;
+    flex-wrap: nowrap;
 }
 
 h2 {
@@ -37,7 +39,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(226, 200, 200);
+    background-color: rgb(221, 130, 130);
     color: white;
     padding: 35px;
 }
@@ -47,7 +49,7 @@ h3 {
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: rgb(252, 204, 204);
+    background-color: rgb(233, 151, 151);
     padding: 25px;
 }
 
@@ -55,7 +57,7 @@ ul {
     display: grid;
     justify-content: center;
     justify-content: space-around;
-    background-color: rgb(241, 160, 160);
+    background-color: rgb(170, 169, 241);
     margin: 0;
     padding: 20px;
     color: white;
@@ -66,21 +68,41 @@ ol {
     display: grid;
     justify-content: center;
     justify-content: space-around;
-    background-color: rgb(165, 196, 196);
+    background-color: rgb(207, 144, 209);
     margin: 0;
     padding: 25px;
     color: white;
     font-size: 1.2em;
 }
-
-p {
+/*Using CSS ID's*/
+p, #boldText {
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(72, 97, 89);
+    background-color: rgb(150, 120, 141);
     padding: 40px;
     color: white;
     font-size: 2em;
 }
+/*Using CSS PSEUDOSELECTORS*/
+h1:hover {
+    color: tan;
+    transition: 0.7s;
+}
 
+h2:hover {
+    color: rgb(19, 82, 82);
+    transition: 0.7s ease-in-out;
+    padding: 40px;
+}
+
+h3:hover {
+    color: rgb(2, 112, 112);
+    transition: 0.7s;
+    padding: 40px;
+}
+
+li:hover {
+    color: rgb(162, 106, 214);
+}
