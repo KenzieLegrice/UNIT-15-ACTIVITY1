@@ -2,7 +2,7 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
-
+/*Importing the custom font from Google Fonts*/
 .nav-bar, a {
     display: flex;
     justify-content: center;
