@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
     font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
-/*Importing custom font from Google Fonts*/
+
 .nav-bar, a {
     display: flex;
     justify-content: center;
@@ -43,7 +44,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #641801, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 6s ease infinite;
     color: white;
@@ -57,7 +58,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: salmon;
+    background-color: rgb(172, 61, 48);
     padding: 30px;
     color: white;
 }
@@ -69,43 +70,47 @@ h3 {
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: rgb(233, 151, 151);
+    background-color: rgb(134, 59, 59);
     padding: 25px;
 }
 
-ul {
-    display: grid;
-    justify-content: center;
-    align-items: center;
+ul{
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    background-color: rgb(170, 169, 241);
+    margin-left: 12px;
+    background-color: rgb(34, 34, 70);
     margin: 0;
     padding: 20px;
     color: white;
     font-weight: bold;
+    padding: 10px;
 }
 
-ol {
-    display: grid;
-    justify-content: center;
-    align-items: center;
+ol{
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    background-color: rgb(207, 144, 209);
+    margin-left: 12px;
+    background-color: rgb(62, 62, 83);
     margin: 0;
-    padding: 25px;
+    padding: 20px;
     color: white;
-    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
 }
+
 /*Using CSS ID's*/
 p, #boldText {
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(150, 120, 141);
+    background-color: rgb(51, 31, 45);
     padding: 40px;
     color: white;
     font-size: 2em;
+    text-align: center;
     
 }
 
@@ -116,12 +121,12 @@ h1:hover {
 }
 
 h2:hover {
-    color: rgb(19, 82, 82);
+    color: rgb(59, 10, 10);
     transition: 0.7s ease-in-out;
 }
 
 h3:hover {
-    color: rgb(2, 112, 112);
+    color: rgb(255, 255, 255);
     transition: 0.7s;
     animation-name: lettershadow;
     animation-duration: 1s;
@@ -131,7 +136,7 @@ h3:hover {
 b:hover{
     transition: 0.7s;
     font-size: 1.5em;
-    color: salmon;
+    color: rgb(141, 128, 126);
 }
 li:hover {
     color: rgb(162, 106, 214);
@@ -163,5 +168,57 @@ a:hover {
     }
     100% {
         background-position: 0% 50%;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    li{
+        font-size: 0.7em;
+        height: max-content;
+        margin-left: 12px;
+    }
+    li:hover {
+        color: rgb(162, 106, 214);
+        transition: 0.7s;
+        font-size: 1em;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    li{
+        font-size: 0.8em;
+        flex-direction: column;
+        margin-left: 12px;
+    }
+    li:hover {
+        color: rgb(162, 106, 214);
+        transition: 0.7s;
+        font-size: 1em;
+        height: auto;
+    }
+    p {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    li{
+        font-size: 0.8em;
+        flex-direction: column;
+        margin-left: 12px;
+    }
+    li:hover {
+        color: rgb(162, 106, 214);
+        transition: 0.7s;
+        font-size: 1em;
+        height: auto;
+    }
+    p {
+        font-size: 1.3rem;
+    }
+    a{
+        width: 55%;
     }
 }
