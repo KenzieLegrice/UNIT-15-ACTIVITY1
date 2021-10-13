@@ -1,3 +1,4 @@
+ 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
     font-family: 'Poppins', sans-serif;
@@ -112,6 +113,26 @@ p, #boldText {
     font-size: 2em;
     text-align: center;
     
+}
+/*Using css float, to make row of images*/
+.image-container{
+    display: flex;
+    height: 1;
+}
+.col1 {
+    float: left;
+    width: 33.3%;
+}
+.col2 {
+    float: right;
+    width: 33.3%;
+}
+img {
+    width: 100%;
+}
+.col3 {
+    width: 33.3%;
+    height: 25%;
 }
 
 /*Using CSS PSEUDOSELECTORS*/
